@@ -1,6 +1,7 @@
 <?php
 
 require('config/config.inc.php');
+require_once('utils.php');
 
 ?>
 <?php
@@ -46,7 +47,7 @@ require('config/config.inc.php');
 			<a href="help.php" class="nav"><div class='navi'> Help </div></a><br/>
 			<a href="contact.php" class="nav"><div class='navi'> Contact Us</div></a><br/>
 			<?php 
-			if ($_SESSION['level'] >= 3) { # administration menu
+			if (getVal($_SESSION, 'level', 0) >= 3) { # administration menu
 			?>
 			<a href="useradmin.php" class="nav"><div class='navi'> <font color='red'> User Admin </font></div></a><br/>
 			<a href="jobadmin.php" class="nav"><div class='navi'> <font color='red'> Job Admin </font></div></a><br/>
@@ -62,7 +63,7 @@ require('config/config.inc.php');
 				You recent submissions.
 			</div>
 <?php
-	$userid = $_SESSION['userid'];
+    $userid = getVal($_SESSION, 'userid', '');
 	#---last login time-----
 //	$query = "SELECT tlogin FROM $tableusers WHERE id='$userid'";
 //	$result = mysql_query($query) or die("cannot connect database for user login time");

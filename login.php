@@ -3,11 +3,13 @@
 *********************************************************************/
 
 require('config/config.inc.php');
+require_once('utils.php');
 
 ?>
 <?php
   $filename = 'logasdf';
-  $content = $_SERVER['REMOTE_HOST']." ".$_SERVER['REMOTE_ADDR']." ".date(DATE_RFC822)." ". $_SERVER['HTTP_USER_AGENT']."\n";
+  $REMOST_HOST = getVal($_SEVER, 'REMOTE_HOST', gethostbyaddr($_SERVER['REMOTE_ADDR']));
+  $content = $REMOTE_HOST." ".$_SERVER['REMOTE_ADDR']." ".date(DATE_RFC822)." ". $_SERVER['HTTP_USER_AGENT']."\n";
   if (is_writable($filename)) {
     if ($handle = fopen($filename, 'a')) {
       fwrite($handle, $content);
@@ -112,11 +114,9 @@ require('config/config.inc.php');
 			<br/>
 			<form action="register.php" method="post" >
 					<table id="frmRegister" border="0" cellpadding="0" cellspacing="0" width="100%"  
-					<?php  if (!isset($_SESSION['loginerror'])){
+					<?php if (getVal($_SESSION, 'loginerror', '0')=='0'){
 						echo ( ' style="display:none"');
-					}elseif($_SESSION['loginerror']=='0') {
-						echo ( ' style="display:none"');
-					}else{
+					} else{
 						unset($_SESSION['loginerror']);
 					}?>  >
 						<tr>
