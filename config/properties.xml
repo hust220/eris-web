@@ -1,0 +1,41 @@
+<properties>
+	<!-- General Properties -->
+	<configuration>
+		<config>
+			<name>admin_email</name>
+			<value>jianopt@ad.unc.edu</value>
+		</config>
+		<config>
+			<name>smtp_host</name>
+			<value>smtp.unc.edu</value>
+		</config>
+		<config>
+			<name>smtp_user</name>
+			<value></value>
+		</config>
+		<config>
+			<name>smtp_password</name>
+			<value></value>
+		</config>
+		<config>
+			<name>db_host</name>
+			<value>localhost</value>
+		</config>
+		<config>
+			<name>db_user</name>
+			<value>other_svc</value>
+		</config>
+		<config>
+			<name>db_password</name>
+			<value>final-S3cr3t</value>
+		</config>
+		<config>
+			<name>db_name</name>
+			<value>ddg</value>
+		</config>
+		<config>
+			<name>upload_directory</name>
+			<value>/var/www/html/eris/uploads</value>
+		</config>
+	</configuration>
+</properties>

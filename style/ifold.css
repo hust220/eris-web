@@ -1,0 +1,268 @@
+BODY {
+	background:				#FCFCFC;
+	color:					#5C5010;
+	font:					normal normal 14px "trebuchet ms", georgia, arial;
+	text-align:				center;
+}
+
+INPUT, SELECT, TEXTAREA {
+	background:				#f3ebc1;
+	color:					#5c5010;
+	border:					1px solid #C3DADF;
+	width:					150px;
+}
+
+INPUT:focus, TEXTAREA:focus, SELECT:focus {
+	background:				#FDFFDF;
+	border:					1px solid #CDD45D;
+}
+
+A {	
+	text-decoration:		none;
+}
+A:link, A:visited {
+	text-decoration:		none;
+/*	color:					#B10808;*/
+}
+
+)
+
+/*#iFrame {
+	visibility: hidden;
+	height: 1px;
+}
+*/
+div.signup {
+	background: 			#f3ebc1;
+	font:				14px 'trebuchet ms', georgia, arial ;
+	border:				solid 1px #6c6015;
+	text-align:			center;
+}
+
+
+div.navi {	
+	background: 			#f3ebc1;
+	font:				14px 'trebuchet ms', georgia, arial ;
+	border:				solid 2px #6c6015;
+	padding:			2px;
+	color:				#5c5010;
+	text-align:			center;
+	width:				120px;
+	border-style:			outset;
+}
+div.navi:hover {	
+	background: 			#f3ebc1;
+	font:				14px 'trebuchet ms', georgia, arial ;
+	border:				solid 2px #6c6015;
+	padding:			2px;
+	color:				#5c5010;
+	text-align:			center;
+	width:				120px;
+	border-style:			inset;
+}
+
+table.queryTable {
+	border-bottom:				solid 1px #ffd800;
+	border-top:				solid 1px #ffd800;
+}
+tr.queryTitle {
+	background:			#fdf5cb;
+}
+#login_content {
+	float:					left;
+	overflow:				auto;
+	padding:				20px;
+	width:					550px;
+}
+#menu {
+	font:					normal normal 10px 'verdana', tahoma, arial;
+	float:					left;
+	width:					200px;
+}
+
+
+#menu .errors_box {
+	background:				#F0F0F0;
+	border:					1px solid #D0D0D0;
+	color:					#AF2026;
+	padding:				4px;
+	margin:					0 0 5px 0;
+	display:				none;
+}
+#menu #frmLogin {
+	border:					1px solid #eeeeee;
+	padding:				5px;
+	height:					40px;
+}
+
+#menu #frmLogin * {
+	font:					normal normal 10px 'verdana', tahoma, arial;
+}
+
+#menu #frmLogin table tr {
+	height:					20px;
+}
+
+#menu #frmLogin table tr td {
+}
+
+#menu #frmLogin INPUT {
+	width:					70px;
+}
+
+#menu #frmLogin INPUT:focus {
+}
+
+#menu #sucRegister {
+	background:				#EFFCFF;
+	border:					1px solid #D1E9EF;
+	font:					normal normal 12px 'trebuchet ms', tahoma, arial;
+	padding:				5px;
+	line-height:			2.0;
+}
+
+#menu #frmRegister * {
+	font:					normal normal 12px 'trebuchet ms', tahoma, arial;
+}
+
+#menu #frmRegister table tr {
+	height:					30px;
+}
+#main {
+	margin:					0px auto;
+	width:					950px;
+}
+/*#header {
+	background:				url(img/empty.jpg) repeat-x;
+	height:					50px;
+	text-align:				left;
+}
+*/
+#header {
+/*	background:				#ffffff;*/
+	background:				url(img/empty.jpg) repeat-x;
+	height:					50px;
+	text-align:				left;
+	width:					850px;
+}
+
+#meta {
+	background:				#ece9da;
+	border-bottom:			1px solid #f0f0f0;
+/*	padding:				2px 2px 2px 2px;*/
+	height:					16px;
+	font:					normal normal 12px 'trebuchet ms', georgia, arial;
+	color:					#5c5010;
+	text-align:				left;
+	width:					850px;
+}
+
+#content {
+	margin:					30px 0 0 0;
+	text-align:				left;
+}
+
+.frontIndicator {
+	font:					normal normal 14px 'trebuchet ms', arial;
+	line-height:			2.0;
+}
+
+#nav {
+	line-height:			0.8;
+	width:					155px;
+	padding:				0px;
+	float:					left;
+}
+
+#nav ul {
+	list-style:				none;
+	margin:					0;
+	padding:				0;
+}
+
+#nav ul a {
+	font:					normal normal 12px 'trebuchet ms', georgia, arial;
+	color:					#e4eef2;
+}
+
+#nav ul a:visited {
+	text-decoration:		none;
+}
+	
+#nav ul li {
+	font:					normal normal 12px 'trebuchet ms', georgia, arial;
+	color:					#e4eef2;
+	cursor:					pointer;
+	margin:					0 0 10px 0;
+	padding:				3px 0 3px 0;
+	text-align:				center;
+	vertical-align:			middle;
+	width:					130px;
+}
+
+#nav ul li:hover {
+	background:				url(img/nav_back_hover.jpg);
+}
+
+#main_content {
+	float:					left;
+	overflow:				visible;
+	padding:				0px;
+	width:					760px !important;
+	width:					740px;
+}
+
+div.indexTitle {
+	color:					#5c5010;
+	font:					normal normal 18px "trebuchet ms", georgia, arial;
+	padding:				0 0 5px 0;
+	border-bottom:			2px dotted #ffd800;
+	margin-bottom:				3px;
+	width:					93%;
+}
+
+div.indexStatus {
+/*	font:					normal normal 14px "trebuchet ms", georgia, arial; */
+	font:					normal bold 14px "trebuchet ms", georgia, arial;
+}
+
+#rightbar {
+	float:					left;	
+	width:					135px;
+}
+
+#ataglance {
+	display:				none;
+	background:				#f9f9f9;
+	border:					1px solid #d6d3d6;
+	padding:				0px;
+	font:					normal normal 10px verdana, arial;
+}
+
+#ataglance-head {
+	background:				#bcefc3;
+	color:					#404040;
+	padding:				3px 0 3px 0;
+	text-align:				center;
+}
+
+#ataglance-content {
+	padding:				5px;
+	color:					#528BA5;
+	line-height:			1.7;
+}
+
+}
+
+
+div.seqpopup {	
+	text-align:			center;
+}
+div.seqpopup:hover {	
+	background: 			#f3ebc1;
+	border:				solid 1px #6c6015;
+	text-align:			center;
+/*	border-style:			inset;*/
+}
+
+
